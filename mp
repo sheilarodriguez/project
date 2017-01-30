@@ -1,15 +1,75 @@
-MIN = 1
-MAX = 100
+n = int(input("Number? "))
+if n < 0:
+   print("The absolute value of", n, "is", -n)
+else:
+   print("The absolute value of", n, "is", n)
+a = 0
+while a < 10:
+    a = a + 1
+    if a > 5:
+        print(a, ">", 5)
+    elif a <= 3:
+        print(a, "<=", 3)
+    else:
+        print("Neither test was true")
+# This Program Demonstrates the use of the == operator
+# using numbers
+print(5 == 6)
+# Using variables
+x = 5
+y = 8
+print(x == y)
+print("Guess the number!")
+while guess != number:
+    guess = int(input("Is it... "))
 
-firstguess = MAX - MIN
-secondguess = firstguess/2
+    if guess == number:
+        print("Hooray! You guessed it right!")
+    elif guess < number:
+        print("It's bigger...")
+    elif guess > number:
+        print("It's not so big.")
+# Asks for a number.
+# Prints if it is even or odd
+ 
+number = float(input("Tell me a number: "))
+if number % 2 == 0:
+    print(int(number), "is even.")
+elif number % 2 == 1:
+    print(int(number), "is odd.")
+else:
+    print(number, "is very strange.")
+# keeps asking for numbers until 0 is entered.
+# Prints the average value.
 
-while 1 == 1:
-  number = (input("Enter your number 0-100:"))
-  print(firstguess)
-  oldguess = firstguess
-  if firstguess > number:
-      print("First guess is too high.")
-      input()
-  guess = int(25)
-      print(guess)
+count = 0
+sum = 0.0
+number = 1 # set to something that will not exit the while loop immediately.
+
+print("Enter 0 to exit the loop")
+
+while number != 0:
+    number = float(input("Enter a number: "))
+    if number != 0:
+        count = count + 1
+        sum = sum + number
+    if number == 0:
+        print("The average was:", sum / count)
+# keeps asking for numbers until count numbers have been entered.
+# Prints the average value.
+
+#Notice that we use an integer to keep track of how many numbers, 
+# but floating point numbers for the input of each number
+sum = 0.0
+
+print("This program will take several numbers then average them")
+count = int(input("How many numbers would you like to average: "))
+current_count = 0
+
+while current_count < count:
+    current_count = current_count + 1
+    print("Number", current_count)
+    number = float(input("Enter a number: "))
+    sum = sum + number
+    
+print("The average was:", sum / count)
