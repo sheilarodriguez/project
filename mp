@@ -12,10 +12,9 @@ while a < 10:
         print(a, "<=", 3)
     else:
         print("Neither test was true")
-# This Program Demonstrates the use of the == operator
-# using numbers
+
 print(5 == 6)
-# Using variables
+
 x = 5
 y = 8
 print(x == y)
@@ -29,8 +28,6 @@ while guess != number:
         print("It's bigger...")
     elif guess > number:
         print("It's not so big.")
-# Asks for a number.
-# Prints if it is even or odd
  
 number = float(input("Tell me a number: "))
 if number % 2 == 0:
@@ -39,12 +36,10 @@ elif number % 2 == 1:
     print(int(number), "is odd.")
 else:
     print(number, "is very strange.")
-# keeps asking for numbers until 0 is entered.
-# Prints the average value.
 
 count = 0
 sum = 0.0
-number = 1 # set to something that will not exit the while loop immediately.
+number = 1
 
 print("Enter 0 to exit the loop")
 
@@ -55,11 +50,7 @@ while number != 0:
         sum = sum + number
     if number == 0:
         print("The average was:", sum / count)
-# keeps asking for numbers until count numbers have been entered.
-# Prints the average value.
 
-#Notice that we use an integer to keep track of how many numbers, 
-# but floating point numbers for the input of each number
 sum = 0.0
 
 print("This program will take several numbers then average them")
