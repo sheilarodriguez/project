@@ -14,7 +14,7 @@ while a < 10:
         print("Neither test was true")
 
 print(5 == 6)
-
+#using variables
 x = 5
 y = 8
 print(x == y)
@@ -28,7 +28,7 @@ while guess != number:
         print("It's bigger...")
     elif guess > number:
         print("It's not so big.")
- 
+#tells you if its too high or too low
 number = float(input("Tell me a number: "))
 if number % 2 == 0:
     print(int(number), "is even.")
