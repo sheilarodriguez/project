@@ -19,8 +19,10 @@ x = 5
 y = 8
 print(x == y)
 print("Guess the number!")
+guess = int(input("Is it... "))
+number = int()
 while guess != number:
-    guess = int(input("Is it... "))
+    
 
     if guess == number:
         print("Hooray! You guessed it right!")
